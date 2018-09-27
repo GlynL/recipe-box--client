@@ -1,0 +1,23 @@
+@import "../base/config";
+
+.recipe {
+  background: $background-light;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid $background-dark;
+  max-width: 800px;
+}
+
+.recipe__title {
+  margin-top: 0;
+}
+
+.recipe__image {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.recipe__list {
+  padding-left: inherit;
+}

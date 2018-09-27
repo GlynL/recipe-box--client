@@ -1,0 +1,21 @@
+.btn {
+  text-decoration: none;
+  background: $primary-colour;
+  color: $font-light;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid $secondary-colour;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:focus {
+  background: $secondary-colour;
+  color: $font-dark;
+  border-color: $primary-colour;
+  cursor: pointer;
+}
+
+.input {
+}

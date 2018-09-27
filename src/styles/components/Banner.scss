@@ -1,0 +1,27 @@
+@import "../base/config";
+
+.nav {
+  display: flex;
+  background: $primary-colour;
+  border-bottom: 1px solid $font-light;
+}
+
+.nav__item {
+  background: $primary-colour;
+  text-decoration: none;
+  border: none;
+  color: #f2f2f2;
+  padding: 15px;
+}
+
+.nav__item:hover {
+  cursor: pointer;
+}
+
+.nav__item--active {
+  background: lighten($primary-colour, 10%);
+}
+
+.nav__item--left {
+  margin-right: auto;
+}
