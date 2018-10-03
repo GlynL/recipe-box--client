@@ -46,7 +46,7 @@ module.exports = {
   plugins: [htmlPlugin],
   devtool: "cheap-module-eval-source-map",
   devServer: {
-    contentBase: path.join(__dirname, "public"),
+    contentBase: path.join(__dirname, "src"),
     historyApiFallback: true /* redirect 404's to /index.html  - refresh */,
     port: 3000,
     open: true,
@@ -63,4 +63,3 @@ module.exports = {
 
 // inside package.json build script
 // -p shorthand for production - not recommended - https://webpack.js.org/guides/production/ (cli alternatives)
-

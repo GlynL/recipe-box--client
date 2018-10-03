@@ -1,7 +1,7 @@
-const API_URL = "/api/users";
+import API_URL from "./base";
 
 export function loginUser(user) {
-  return fetch(`/api/users/login`, {
+  return fetch(`${API_URL}/api/users/login`, {
     method: "post",
     body: JSON.stringify(user),
     headers: new Headers({
@@ -19,7 +19,7 @@ export function loginUser(user) {
 }
 
 export async function registerUser(user) {
-  return fetch(`/api/users/new`, {
+  return fetch(`${API_URL}/api/users/new`, {
     method: "post",
     body: JSON.stringify(user),
     headers: new Headers({
