@@ -32,8 +32,8 @@ class RecipeBox extends Component {
     let formData = new FormData();
     formData.append("name", recipe.name);
     formData.append("recipe-image", recipe.image.upload);
-    formData.append("ingredients", recipe.ingredients);
-    formData.append("method", recipe.method);
+    formData.append("ingredients", JSON.stringify(recipe.ingredients));
+    formData.append("method", JSON.stringify(recipe.method));
     formData.append("author", this.state.user.info.id);
     const newRecipe = await api.postRecipe(formData);
     const recipes = [...this.state.recipes, newRecipe];

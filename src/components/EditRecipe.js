@@ -108,47 +108,50 @@ class EditRecipe extends Component {
         <header>
           <h1>Edit Recipe</h1>
         </header>
-        <input
-          placeholder="Boiled Potatoes"
-          aria-label="recipe title"
-          className="recipe-form__input"
-          type="text"
-          id="name"
-          name="name"
-          value={this.state.recipe.name}
-          onChange={this.handleNameChange}
-        />
-        <input
-          type="file"
-          name="recipe-image"
-          id="recipe-image"
-          onChange={this.handleFileChange}
-        />
-        <form onSubmit={this.handleIngredientSubmit} action="">
+        <div className="recipe-form">
           <input
-            placeholder="potatoes"
-            aria-label="ingredient"
-            id="ingredient"
-            name="ingredient"
+            placeholder="Boiled Potatoes"
+            aria-label="recipe title"
+            className="recipe-form__input"
             type="text"
-            value={this.state.ingredientInput}
-            onChange={this.handleIngredientChange}
+            id="name"
+            name="name"
+            value={this.state.recipe.name}
+            onChange={this.handleNameChange}
           />
-          <button className="btn">Add Ingredient</button>
-        </form>
+          <input
+            className="recipe-form__input"
+            type="file"
+            name="recipe-image"
+            id="recipe-image"
+            onChange={this.handleFileChange}
+          />
+          <form onSubmit={this.handleIngredientSubmit} action="">
+            <input
+              placeholder="potatoes"
+              aria-label="ingredient"
+              id="ingredient"
+              name="ingredient"
+              type="text"
+              value={this.state.ingredientInput}
+              onChange={this.handleIngredientChange}
+            />
+            <button className="btn">Add Ingredient</button>
+          </form>
 
-        <form action="" onSubmit={this.handleMethodSubmit}>
-          <input
-            placeholder="boil potatoes"
-            aria-label="method"
-            type="text"
-            id="method"
-            name="method"
-            value={this.state.methodInput}
-            onChange={this.handleMethodChange}
-          />
-          <button className="btn">Add Step</button>
-        </form>
+          <form action="" onSubmit={this.handleMethodSubmit}>
+            <input
+              placeholder="boil potatoes"
+              aria-label="method"
+              type="text"
+              id="method"
+              name="method"
+              value={this.state.methodInput}
+              onChange={this.handleMethodChange}
+            />
+            <button className="btn">Add Step</button>
+          </form>
+        </div>
 
         <button className="btn" onClick={this.handleClick}>
           Save Recipe

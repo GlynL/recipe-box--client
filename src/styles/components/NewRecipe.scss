@@ -5,6 +5,13 @@
   padding-top: 50px;
 }
 
+.recipe-form {
+  text-align: left;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
 .recipe-form__input {
-  margin-left: 20px;
+  display: block;
+  margin-top: 20px;
 }

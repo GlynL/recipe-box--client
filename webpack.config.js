@@ -14,7 +14,7 @@ module.exports = {
     // node function - makes sure the path works across all filesystems
     path: path.join(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "/recipebox/" /* base path for all assets - refresh */
+    publicPath: "/" /* base path for all assets - refresh */
   },
   // loader - npm i babel-core babel-loader
   // also .babelrc file for presets
