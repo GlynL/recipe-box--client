@@ -12,7 +12,7 @@ module.exports = {
   entry: "./src/app.js",
   output: {
     // node function - makes sure the path works across all filesystems
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "src"),
     filename: "bundle.js",
     publicPath: "/" /* base path for all assets - refresh */
   },
@@ -51,7 +51,7 @@ module.exports = {
     port: 3000,
     open: true,
     proxy: {
-      "/api": "http://localhost:8080"
+      // "/api": ""
     }
   },
   // webpack 4 requirement

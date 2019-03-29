@@ -5,7 +5,7 @@ import RecipeBox from "./components/RecipeBox";
 import "./styles/styles.scss";
 
 ReactDOM.render(
-  <BrowserRouter basename="/recipebox">
+  <BrowserRouter>
     <RecipeBox />
   </BrowserRouter>,
   document.getElementById("root")
