@@ -12,7 +12,7 @@ module.exports = {
   entry: "./src/app.js",
   output: {
     // node function - makes sure the path works across all filesystems
-    path: path.join(__dirname, "src"),
+    path: path.join(__dirname, "dist"),
     filename: "bundle.js",
     publicPath: "/" /* base path for all assets - refresh */
   },
@@ -55,7 +55,7 @@ module.exports = {
     }
   },
   // webpack 4 requirement
-  mode: "development"
+  mode: "production"
 };
 
 // react-router refreshing/url links
